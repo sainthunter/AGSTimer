@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ags geri sayım</string>
+    <string name="widget_text_placeholder">%1$d gün kaldı</string>
+</resources>
