@@ -15,6 +15,12 @@ android {
         versionName = "1.0"
     }
 
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+        isCoreLibraryDesugaringEnabled = true
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -45,6 +51,7 @@ dependencies {
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
+    coreLibraryDesugaring(libs.android.desugar.jdk.libs)
 
     debugImplementation(libs.androidx.compose.ui.tooling)
 }
